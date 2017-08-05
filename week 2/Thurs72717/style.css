@@ -1,0 +1,90 @@
+p {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+h1,h2,h3,h4,h5 {
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+}
+
+.bold {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 45px;
+}
+
+.huge {
+	font-size: 45px;
+	line-height: 62px;
+}
+
+.serif {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+
+.droid {
+	font-family: 'Droid Sans', sans-serif;
+}
+
+.ubuntu {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.lemonada {
+	font-family: 'Lemonada', cursive;
+}
+
+a:link {
+	color: red;
+}
+/*
+a:hover {
+	color: purple;
+	transform: rotate(90deg);
+    animation-duration: 3s;
+}*/
+
+
+a:active {
+	color: pink;
+	font-size: 55px;
+}
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* The element to apply the animation to */
+
+a:hover {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.rotate {
+
+    transform: rotate(-360deg);
+    animation-duration: 3s;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rock paper scissors</title>
+</head>
+<body>
+	
+  <div id="game">
+
+  </div>
+<div class="jumbotron">
+<h1> Rock Paper Scissors</h1>
+  
+Score:
+
+<p>Player Decision: <div id="playerPick"></div></p>
+<p>Computer Decition <div id="computerPick"></div></p>
+
+Wins: <div id="wins"></div>
+Loss: <div id="loss"></div>
+Ties: <div id="ties"></div>
+
+ 
+ <script type="text/javascript">
+
+var computerPick = ["r", "p", "s"];
+var wins = 0;
+var loss = 0;
+var ties = 0;
+
+ take input from player event keypress
+
+math randomsauce to get computerPick
+
+
+if (computerPick == userPick) {
+	yell its a tie
+	draw++
+}
+
+ else if (userInput is rock){
+ 	
+and then
+
+ 	if ( computer picks Scissors ) {
+	Yell  user wins 
+	win ++
+	}
+
+	else (the computer picks paper) {
+		yell computers wins
+	loss ++
+	}
+	
+ 
+}
+
+ 	else if (userInput is P) {
+
+ 		and then
+
+		if  (computer picks rock){
+ 			yell user wins
+ 			win ++
+	 		}
+ 	
+ 		else  (computer picks scissors) {
+ 		 	yell computer wins
+ 			loss ++
+		}
+		
+	}
+
+ else if (userInput is S)
+
+ 		if  (computer picks paper){
+ 		yell user wins
+ 		win ++}
+
+ 		else  (computer picks rock){
+ 			yell compiuter wins
+ 			loss ++ 		}
+		}
+ 	
+}
+}
+
+
+ // 	// body...
+ // };
+ //    document.onkeyup = function(donkey) {
+ //      alert("pressed a button");
+ //    };
+  
+
+  </script>
+</div>
+</body>
+</html>

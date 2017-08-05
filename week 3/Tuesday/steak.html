@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Steak</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	var likeSteak = confirm ("Do you like steak?");
+	var likeBeer = confirm ("Do you like beer?");
+	var age = prompt ("What is your age?");
+
+if (parseInt(age) >= 21 && likeSteak === true && likeBeer === true ){
+	document.write("You're going to love this ribeye and lager!");
+}
+
+else if (parseInt(age) < 21 && likeSteak === true ) {
+	document.write("Well, enjoy your ribeye and non-alcoholic beverage.");
+}
+
+else if ( likeSteak === false ) {
+	document.write("have a salad then you fricking vegan");
+}
+
+else if ( likeSteak === false && likeBeer === false ) {
+	document.write("are You a Communist?");
+}
+
+else if ( likesteak === true && likeBeer ===false ) {
+	document.write("at least you like steak");
+}
+else {
+	document.write("You're just a crappy person");
+}
+</script>
+	
+</body>
+</html>

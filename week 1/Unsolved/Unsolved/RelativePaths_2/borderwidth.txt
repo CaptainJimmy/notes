@@ -1,0 +1,9 @@
+
+Wide: 400+22+22+10+20=474
+
+Height: 440 + 25 +30 +22 + 22 = 539px
+
+Total element Width? 400+30+50+10+20+22+22 = 554 px
+
+Total element height?  440 + 10+20+25+30+22+22 = 569 px
+
