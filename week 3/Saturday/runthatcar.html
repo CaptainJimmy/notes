@@ -2,11 +2,21 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>My First Object</title>
+    <title>Run That Car!</title>
   </head>
   <body>
+<h1>Run That Car!!!!</h1>
+
+<h3> Press H to honk, Press D to drive to work, Press W to drive around the world, press T to tuneup </h3>
 
     <script>
+      // Captures keyboard input. Depending on the letter pressed it will "call" (execute) different functions.
+      document.onkeyup = function(event) {
+
+        // Captures the key press, converts it to lowercase, and saves it to a variable.
+        var letter = String.fromCharCode(event.keyCode).toLowerCase();
+        
+    
 
       var car = {
         make: "Honda",
@@ -46,21 +56,37 @@
         }
       };
 
-
+if ( letter === "d" ) {
+ car.driveToWork();
+}
+else if ( letter === "h" ){
+  car.honk();
+}
+else if (letter ==="w"){
+  car.driveAroundWorld();
+}
+else if ( letter === "t"){
+  car.getTuneUp();
+}
+else {
+  alert("Not Recognized. Doing nothing");
+}
+  };
       // How would we log...
 
       // The car's make?
-console.log(car.make);
+
+//console.log(car.make);
       // The car's model?
-console.log(car.model);
+//console.log(car.model);
       // The car's mileage?
-console.log(car.mileage);
+//console.log(car.mileage);
       // How would we run the car's driveToWork function?
-car.driveToWork();
+//car.driveToWork();
       // How would we run the car's driveAroundWorld function?
-car.driveAroundWorld();
+//car.driveAroundWorld();
       // How would we run the getTuneUp function?
-car.getTuneUp();
+//car.getTuneUp();
 
     </script>
     
