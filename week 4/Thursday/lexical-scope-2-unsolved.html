@@ -17,18 +17,21 @@
         console.log("inside printInfo()");
 
         // What will this print?
+        // everything it knows, CAT object
         console.log(this);
 
-        // What will this print?
+        //  Name: Gus Color: Gray Age: 15
         console.log("Name:", this.name, "Color:", this.color, "Age:", this.age);
 
         var nestedFunction = function() {
           console.log("inside nestedFunction()");
 
           // What will this print?
+          // 
           console.log(this);
 
           // What will this print?
+          //Name: Gus Color: Gray Age: 15
           console.log("Name:", this.name, "Color:", this.color, "Age:", this.age);
         };
 
@@ -37,6 +40,7 @@
     };
 
     // calls the printInfo function. Which subsequently calls the nestedFunction()
+    // undefined because there is no Return??
     cat.printInfo();
 
 </script>
