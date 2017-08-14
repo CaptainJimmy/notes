@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 1</title>
+</head>
+
+<body>
+
+  <div id="game" class="jumbotron"> 
+
+  	<p>
+  		Push (R)ock, (P)aper, or (S)cissors to start playing!
+		<br>
+		Wins: <span id="wins"> 0 </span>
+		<br>
+		Losses: <span id="losses"> 0 </span>
+		<br>
+		Draws: <span id="draws">  0 </span>
+		<br>
+
+	</p>
+
+  </div>
+
+  <!-- if r || p || s presssed set var playerPick to key.pressed -->
+  <!-- else pressed something else print please press r/p/s -->
+
+  <!-- set compPick to random -->
+
+  <!-- Math.floor(Math.random() * rpsArray.length) -->
+
+  <!-- if playerPick == compPick set draw++ -->
+
+	  <!-- if playerPick == r -->
+	  	<!-- if compPick p lose++ -->
+	  	<!-- else if compPick s win++ -->
+
+	  <!-- if playerPick == s -->
+	  	<!-- if compPick r lose++ -->
+	  	<!-- else if compPick p win++ -->
+
+	  <!-- if playerPick == p -->
+	  	<!-- if compPick s lose++ -->
+	  	<!-- else if compPick r win++ -->
+
+	  <!-- else error! -->
+
+  <script type="text/javascript">
+
+ 		
+    	var wins = 0;
+		var losses = 0;
+		var draws = 0;
+		var rpsArray = ["r", "p", "s"];
+		var compPick = Math.floor(Math.random() * rpsArray.length);
+
+
+
+    // Whenever a key is pressed, alert "pressed a button".
+    document.onkeyup = function(event) {
+    	// alert(event.key);
+    	var playerPick = event.key;
+    	var compPick = Math.floor(Math.random() * rpsArray.length);
+
+    		if (playerPick !== "r" && playerPick !== "p" && playerPick !== "s") {
+    			alert("Press R, P, or S to play!");
+    		}
+
+		
+
+    		else if (playerPick === "r" && compPick === 0) {
+    			alert("Draw!");
+    			
+
+    			document.querySelector("#draws").innerText = draws++;
+    		}
+
+    		else if (playerPick === "r" && compPick === 1) {
+    			alert("Loss!");
+    			
+
+    			document.querySelector("#losses").innerText = losses++;
+    		}
+
+    	
+    	 console.log(wins, losses, draws, rpsArray, compPick, rpsArray[compPick]);
+    };
+
+
+  </script>
+
+</body>
+
+</html>
