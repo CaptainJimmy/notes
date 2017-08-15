@@ -101,6 +101,8 @@ poultry: {
 // Console log 3 properties for every one of the five objects
 
 console.log( arrayObject.poultry.chicken.feathers );
+console.log (arrayObject.poultry.turkey);
+console.log (arrayObject.poultry.chicken.beak);
 
 
 // 6. JQUERY EVENTS
