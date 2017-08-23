@@ -1,0 +1,43 @@
+Bash Questions:
+
+What is the command to create a file?
+
+touch (filename)
+
+What is the command to create a folder?
+
+mkdir (foldername)
+
+What is the command to delete a file?
+
+rm (filename)
+
+
+What is the command to delete a folder?
+
+rmdir (foldername)
+
+What is the command to move a file?
+
+mv (source) (target)
+
+What is the command to copy a file?
+
+cp (source) (target)
+
+What is the command to go up one directory?
+
+cd ..
+
+What is the command to list the files in a directory?
+
+ls
+
+What is the command to see what directory you are currently in?
+
+pwd
+
+What would typing history do?
+
+creates a typing log of your typed commands.  It allows you to go back and find what you've typed, or others to see what youve done.
+
