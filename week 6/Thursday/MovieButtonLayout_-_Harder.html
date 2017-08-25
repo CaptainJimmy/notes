@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Favorite Movies</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    button,
+    div,
+    form,
+    input {
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Movie Search</h1>
+
+    <!-- Movies will get dumped here -->
+    <div id="movies-view"></div>
+
+    <form id="movie-form">
+      <label for="movie-input">Add a Movie Bro</label>
+      <input type="text" id="movie-input"><br>
+
+      <!-- Button triggers new movie to be added -->
+      <input id="add-movie" type="submit" value="Add a Movie Bro">
+    </form>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script type="text/javascript">
+      // Initial array of movies
+      var movies = ["The Matrix", "The Notebook", "Mr. Nobody", "The Lion King"];
+
+      // Function for displaying movie data
+      function renderButtons() {
+        $("#movies-view").empty();
+        
+        for (var i=0; i < movies.length ; i++ ){
+         // console.log('<button class="btn btn-default btn-lg normal-button"' + movies[i] + ' </button>');
+          var movieButton=$('<button>');
+          movieButton.text(movies[i]);
+          movieButton.attr("data-movie",movies[i]);
+              $("#movies-view").append(movieButton);
+            }
+      }
+
+      // This function handles events where one button is clicked
+ 
+        $("#add-movie").on("click", function() {
+
+          event.preventDefault(); 
+        var newMovie=$("#movie-input").val();
+      
+        if (newMovie !== "") {
+          $("#movie-input").val("");
+          movies.push(newMovie);
+                renderButtons();
+              }
+      });
+        // YOUR CODE GOES HERE
+     
+     
+
+      // Calling the renderButtons function to display the initial list of movies
+      renderButtons();
+    </script>
+  </div>
+</body>
+
+</html>
