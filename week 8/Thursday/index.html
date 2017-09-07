@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="Stuff" content="width=device-width, initial-scale=1">
+	<title>Employee Data Management</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+	<div class="jumbotron text-center">
+		<h1>Employee Data Management</h1>
+		<h2>A comprehensive Directory of EMployee Billable Hours</h2>
+	</div>
+
+		<div class="panel panel-primary">
+            <div class="panel-heading">
+               <h2 class="panel-title"><strong>Current Employees</strong></h2>
+            </div>
+            <div class="panel-body">
+              <table class="table" id='employee-table'>
+                <thead>
+                  <tr>
+                    <th>Employee Name</th>
+                    <th>Role</th>
+                    <th>Start Date</th>
+                    <th>Months Worked</th>
+                    <th>Monthly Rate ($)</th>
+                    <th>Total Billed ($)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h2 class="panel-title"><strong>Add Employee</strong></h2>
+		</div>
+		<div class="panel-body">
+			<form id="employeeAdd">	
+
+			<div>
+				<label for="employeeName">Employee Name</label>
+				<input type="name id="employeeName">
+			</div>
+			<div>
+				<label for="employeeRole">Employee Role</label>
+				<input type="text" class="input" id="employeeRole">
+			</div>
+			<div>
+				<label for="date" class="input">Date</label>
+				<input type="date" class="input" id="date">
+			</div>
+			<div>
+				<label for="monthlyRate">Monthly Rate</label>
+				<input type="text" id="monthlyRate">
+			</div>
+			</form>
+		</div>
+
+	</div>
+
+</div>
+</body>
+</html>
