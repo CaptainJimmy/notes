@@ -63,7 +63,7 @@ inquirer
     // If the inquirerResponse confirms, we displays the inquirerResponse's username and pokemon from the answers.
     if (inquirerResponse.confirm) {
       console.log("\nWelcome " + inquirerResponse.username);
-      console.log("Your " + inquirerResponse.weatherTown + " is now your query.\n");
+      console.log(inquirerResponse.weatherTown + " is now your query.\n");
       weather.find({ search: inquirerResponse.weatherTown, degreeType: "F" }, function(err, result) {
         console.log("");
         console.log("Weather Forecast: "+inquirerResponse.weatherTown );

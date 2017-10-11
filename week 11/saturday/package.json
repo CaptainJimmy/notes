@@ -1,0 +1,15 @@
+{
+  "name": "charachter.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "charachter.js",
+  "dependencies": {
+    "chalk": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
